@@ -1,0 +1,143 @@
+body{
+
+    font-size: 16px;
+    background-color: #009688;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+.line-1 { 
+    font-style: italic;
+    position: relative;
+    top: 50%;  
+    width: 18em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 220%;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+    background-color: transparent; 
+}
+  
+/* Animation */
+.typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;    
+}
+
+@keyframes typewriter {
+    from{width: 0;}
+    to{width: 22em;}
+} 
+
+@keyframes blinkTextCursor {
+    from{border-right-color: rgba(74, 112, 238, 0.75);}
+    to{border-right-color: transparent;}
+}
+.custom-box{
+    max-width: 700px;
+    background-color: lightgreen;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.custom-box.hide{
+    display: none;
+}
+
+
+.home-box h3{
+    font-size: 18px;
+    color:#000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+
+}
+
+.home-box p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    color:#000000;
+    font-weight: 400;
+}
+
+.home-box p span{
+    font-weight: 500;
+}
+
+.home-box .btn{
+    margin-top: 20px;
+}
+.btn{
+    padding: 15px 45px;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+h1,h4,h3,
+h2 {
+    color: lightgreen;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: red;
+    font-family: 'Archivo', sans-serif;
+}
+
+a:hover {
+    color: red;
+    font-family: 'Archivo', sans-serif;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #343a40;
+}
+
+#finalScore {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+span {
+       color:darkorange;
+    font-family: 'Archivo', sans-serif;
+}
+
+p {     color: white;
+        font-family: 'Archivo', sans-serif;
+}
+
+#questionTitle {
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#answerCheck {
+    font-style: italic;
+    color: #4D5159;
+}
